@@ -1,0 +1,18 @@
+descriptor-schema-version: "2.2"
+info:
+  name: cppagent
+  version: latest
+app:
+  cpuarch: "x86_64"
+  type: docker
+  resources:
+    profile: c1.large
+    network:
+      -
+        interface-name: eth0
+        ports:
+            tcp: [5000]
+
+  startup:
+    rootfs: rootfs.tar
+    target: ["/bin/sh", "/usr/local/bin/start_agent.sh"]
