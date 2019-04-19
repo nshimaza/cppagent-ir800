@@ -1,7 +1,7 @@
-# Copyright (c) 2017 Cisco and/or its affiliates.
+# Copyright (c) 2019 Cisco and/or its affiliates.
 #
 # This software is licensed to you under the terms of the Cisco Sample
-# Code License, Version 1.0 (the "License"). You may obtain a copy of the
+# Code License, Version 1.1 (the "License"). You may obtain a copy of the
 # License at
 #
 #                https://developer.cisco.com/docs/licenses
@@ -21,11 +21,10 @@ RUN opkg update && \
     opkg install cppunit-dev && \
     opkg install cmake && \
     opkg install pkgconfig
-ADD copy.sh /
-ADD https://github.com/mtconnect/cppagent/archive/v1.3.0.17.tar.gz /opt/src/
+ADD https://github.com/mtconnect/cppagent/archive/v1.4.0.10.tar.gz /opt/src/
 RUN cd /opt/src && \
-    tar zxf v1.3.0.17.tar.gz && \
-    mv cppagent-1.3.0.17 cppagent && \
+    tar zxf v1.4.0.10.tar.gz && \
+    mv cppagent-1.4.0.10 cppagent && \
     cd cppagent && \
     cmake . && \
     make agent
