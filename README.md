@@ -1,8 +1,9 @@
 # MTConnect Agent on IR800 IOx
 
-This Git repo provides procedure and Dockerfiles to build an IOx
-application running open source C++ MTConnect Agent on
-Cisco 829 / 809 Industrial Integrated Services Routers.
+This Git repo provides procedure and Dockerfiles to build an IOx application
+running open source C++ MTConnect Agent on Cisco 829 / 809 Industrial Integrated
+Services Routers.  This demonstrates how you can build and package IOx apps for
+IR 809 or 829.
 
 Building process consists of following steps.
 
